@@ -13,7 +13,7 @@ const displayMessage = () => {
         </div>`;
   });
 
-  utils.printToDom('#messageCard', domString);
+  utils.printToDom('messageCard', domString);
 };
 
 export default { displayMessage };
