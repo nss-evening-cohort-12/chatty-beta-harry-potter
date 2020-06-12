@@ -1,10 +1,12 @@
 import messageData from '../helpers/data/messageData';
+import displayMessage from '../displayMessage/displayMessage';
 
 const addMessageToArray = (e) => {
   e.preventDefault();
   const message = e.target.elements.message.value;
-  messageData.setMessages(1, message); //  should add selected user when component finished
-  // should reprint message array when finished
+  const selectedUser = document.querySelector('input[name=selectedUser]:checked').value;
+  messageData.setMessages(selectedUser, message);
+  displayMessage.displayMessage();
 };
 
 const addMessageListener = () => {
