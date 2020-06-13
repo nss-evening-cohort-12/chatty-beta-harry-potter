@@ -11,8 +11,7 @@
 
 <div id=messageCard></div>
 
-<div id="user-radios" class="m-2 p-2 d-block d-flex flex-column">
-</div>
+<div id="user-radios" class="m-2 p-2 d-block d-flex flex-column"></div>
 
 <div>
   <form id="new-message-form">
@@ -24,6 +23,19 @@
   <div class="form-check">
     <input type="checkbox" class="form-check-input" id="largerText">
     <label class="form-check-label" for="largerText">Make Text Larger</label>
+  </div>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#gif-selector" aria-expanded="false" aria-controls="collapseExample">
+    Giphy
+  </button>
+  <div class="collapse" id="gif-selector">
+    <div class="card card-body">
+      <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+          <input type="text" class="form-control" id="gif-search" placeholder="Search for a Gif">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search Gifs</button>
+      </form>
+    </div>
   </div>
 </div>
 
