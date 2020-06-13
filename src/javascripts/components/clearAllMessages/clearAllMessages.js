@@ -1,10 +1,12 @@
-import getMessages from '../../helpers/data/messageData';
+import clearMessages from '../../helpers/data/messageData';
+import displayMessages from '../../displayMessage/displayMessage';
 
-
-const clearMessages = () => {
-  getMessages.getMessages().splice(0, getMessages.getMessages());
+const buttonClear = () => {
+  $('nav').on('click', '#clearMessages', () => {
+    clearMessages.clearMessages();
+    displayMessages.displayMessage();
+  });
 };
 
-$('body').on('click', '#clearMessages', clearMessages);
 
-export default { clearMessages };
+export default { buttonClear };

@@ -11,7 +11,7 @@ const init = () => {
   userRadios.printRadioButtons();
   displayMessage.displayMessage();
   largerText.largerTextListener();
-  clearAll.clearMessages();
+  clearAll.buttonClear();
 };
 
 init();

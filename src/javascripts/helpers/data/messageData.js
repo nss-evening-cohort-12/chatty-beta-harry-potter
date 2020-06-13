@@ -39,6 +39,10 @@ const getMessages = (limit) => {
   return messages;
 };
 
+const clearMessages = () => {
+  messages.splice(0, messages.length);
+};
+
 const generateUniqueId = () => Math.max(...messages.map((element) => element.messageId)) + 1;
 
 const setMessages = (userId, message) => {
@@ -51,4 +55,4 @@ const setMessages = (userId, message) => {
   messages.push(newMsg);
 };
 
-export default { getMessages, setMessages };
+export default { getMessages, setMessages, clearMessages };
