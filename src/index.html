@@ -7,16 +7,25 @@
   <title>Jungle Chat</title>
 </head>
 <body>
-  <div id=messageCard></div>
   <h1>JUNGLE CHAT</h1>
- 
-    
-    
+
+<div id=messageCard></div>
 
 <div id="user-radios" class="m-2 p-2 d-block d-flex flex-column">
 </div>
 
+<div>
+  <form id="new-message-form">
+    <div class="form-group">
+      <textarea class="form-control" id="new-message" name="message" placeholder="Enter your message here..."></textarea>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="largerText">
+    <label class="form-check-label" for="largerText">Make Text Larger</label>
+  </div>
+</div>
 
 </body>
 </html>
-
