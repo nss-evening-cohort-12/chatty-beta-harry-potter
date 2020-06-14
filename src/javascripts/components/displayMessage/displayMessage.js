@@ -3,7 +3,7 @@ import utils from '../../helpers/utils';
 import getMessages from '../../helpers/data/messageData';
 import userData from '../../helpers/data/userData';
 
-const getUsername = (id) => userData.getUsers().find((user) => user.id === id).name;
+const getUsername = (id) => userData.users.find((user) => user.id === id).name;
 
 const displayMessage = () => {
   let domString = '';

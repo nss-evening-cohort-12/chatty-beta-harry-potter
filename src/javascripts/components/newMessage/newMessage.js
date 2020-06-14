@@ -1,5 +1,5 @@
-import messageData from '../helpers/data/messageData';
-import displayMessage from './displayMessage/displayMessage';
+import messageData from '../../helpers/data/messageData';
+import displayMessage from '../displayMessage/displayMessage';
 
 const addMessageToArray = (e) => {
   e.preventDefault();

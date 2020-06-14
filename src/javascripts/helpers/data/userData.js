@@ -9,5 +9,5 @@ const users = [
 const getUsers = () => users;
 
 export default {
-  getUsers,
+  getUsers, users,
 };
