@@ -34,12 +34,15 @@
   </button>
   <div class="collapse" id="gif-selector">
     <div class="card card-body">
-      <form class="form-inline">
+      <form class="form-inline" id="search-giphy">
         <div class="form-group mx-sm-3 mb-2">
-          <input type="text" class="form-control" id="gif-search" placeholder="Search for a Gif">
+          <input type="text" class="form-control" id="gifPhrase" placeholder="Search for a Gif">
         </div>
         <button type="submit" class="btn btn-primary mb-2">Search Gifs</button>
       </form>
+    </div>
+    <div id="gifs" class="d-flex justify-content-around">
+      <form id="gif-picker"></form>
     </div>
   </div>
 </div>
