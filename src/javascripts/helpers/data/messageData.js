@@ -43,6 +43,10 @@ const clearMessages = () => {
   messages.splice(0, messages.length);
 };
 
+const deleteMessage = () => {
+  messages.splice(0, 1);
+};
+
 const generateUniqueId = () => Math.max(...messages.map((element) => element.messageId)) + 1;
 
 const setMessages = (userId, message) => {
@@ -55,4 +59,6 @@ const setMessages = (userId, message) => {
   messages.push(newMsg);
 };
 
-export default { getMessages, setMessages, clearMessages };
+export default {
+  getMessages, setMessages, clearMessages, deleteMessage,
+};

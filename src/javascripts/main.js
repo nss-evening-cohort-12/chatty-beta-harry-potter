@@ -5,6 +5,7 @@ import userRadios from './components/userRadios';
 import listener from './components/newMessage';
 import largerText from './components/largerText/largerText';
 import clearAll from './components/clearAllMessages/clearAllMessages';
+import buttonDelete from './components/deleteMessage/deleteMessage';
 
 const init = () => {
   listener.addMessageListener();
@@ -12,6 +13,7 @@ const init = () => {
   displayMessage.displayMessage();
   largerText.largerTextListener();
   clearAll.buttonClear();
+  buttonDelete.buttonDelete();
 };
 
 init();

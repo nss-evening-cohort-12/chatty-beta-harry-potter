@@ -15,6 +15,7 @@ const displayMessage = () => {
                 <p class="message">${messages.message}</p>
                 <p class="time">${moment(Date.now()).format('MMMM Do YYYY, h:mm:ss a')}</p>
             </div>
+            <button type="button" id="delete" class="fas fa-times-circle"></button>
         </div>`;
   });
 
