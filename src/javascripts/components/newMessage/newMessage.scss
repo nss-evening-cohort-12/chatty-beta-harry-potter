@@ -1,8 +1,24 @@
+#message-entry {
+  position: relative;
+  width: 100vw;
+  background-color: darkslategray;
+}
+
 #gifs {
   width: 630px;
   margin: auto;
+  position: absolute;
+  top: -300%;
+  right: 0;
 }
 
 #gifs .gif-choices {
   flex-basis: 33.333%;
+}
+
+#gif-selector {
+  position: absolute;
+  z-index: 1;
+  top: -100%;
+  right: 0;
 }
