@@ -43,8 +43,13 @@ const clearMessages = () => {
   messages.splice(0, messages.length);
 };
 
-const deleteMessage = () => {
-  messages.splice(0, 1);
+const deleteMessage = (e) => {
+  // for (let i = 0; i < messages.length; i += 1) {
+  //   if (e.target.id === messages[i].userId) {
+  //     messages.splice(i, 1);
+  //   }
+  // }
+  console.error(e.target);
 };
 
 const generateUniqueId = () => Math.max(...messages.map((element) => element.messageId)) + 1;

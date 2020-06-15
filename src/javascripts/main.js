@@ -8,7 +8,7 @@ import clearAll from './components/clearAllMessages/clearAllMessages';
 import buttonDelete from './components/deleteMessage/deleteMessage';
 import searchGiphy from './components/searchGiphy/searchGiphy';
 
-const init = () => {
+const init = (e) => {
   listener.addMessageListener();
   userRadios.printRadioButtons();
   displayMessage.displayMessage();
@@ -16,6 +16,7 @@ const init = () => {
   clearAll.buttonClear();
   buttonDelete.buttonDelete();
   searchGiphy.formListener();
+  console.error(e.target);
 };
 
 init();
