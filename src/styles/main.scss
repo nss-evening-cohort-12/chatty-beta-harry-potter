@@ -2,9 +2,36 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 
-body {
-  background-color: blue;
+html, body {
+  margin:0;
+  min-height:100vh;
+  height: 100vh;
 }
 
+body {
+  margin:0;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% auto 20%;
+    grid-template-areas: 
+      "nav nav"
+      "users messages"
+      "newMessage newMessage";
+}
 
+nav {
+    grid-area: nav;
+}
 
+#user-radios {
+  grid-area: users;
+}
+
+#messageCard {
+  overflow-y: scroll;
+  grid-area: messages;
+}
+
+#message-entry {
+    grid-area: newMessage;
+}

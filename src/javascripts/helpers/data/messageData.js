@@ -45,12 +45,13 @@ const clearMessages = () => {
 
 const generateUniqueId = () => Math.max(...messages.map((element) => element.messageId)) + 1;
 
-const setMessages = (userId, message) => {
+const setMessages = (userId, message, gifId) => {
   const newMsg = {
     userId,
     timestamp: Date.now(),
     message,
     messageId: generateUniqueId(),
+    gifId,
   };
   messages.push(newMsg);
 };
