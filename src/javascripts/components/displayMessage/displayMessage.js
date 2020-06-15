@@ -10,11 +10,13 @@ const displayMessage = () => {
   const allow = document.querySelector('input[type = radio]:checked').value;
   getMessages.getMessages().forEach((messages) => {
     domString += `
-        <div class="card">
+        <div class="card mx-auto mt-4 w-75">
             <div class="card-body" id="${messages.messageId}">
                 <h5 class="name">${getUsername(messages.userId)}</h5>
                 <p class="message">${messages.message}</p>
-                ${messages.gifId ? `<img src="https://media1.giphy.com/media/${messages.gifId}/200w.gif"` : ''}
+                ${messages.gifId ? `<video autoplay loop muted playsinline>
+                                      <source src="${messages.gifId}" type="video/mp4" >
+                                    </video>` : ''}
                 <p class="time">${moment(Date.now()).format('MMMM Do YYYY, h:mm:ss a')}</p>
             </div>`;
     if (getUsername(messages.userId) === allow) {

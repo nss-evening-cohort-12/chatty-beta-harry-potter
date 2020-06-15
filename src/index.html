@@ -7,7 +7,8 @@
   <title>Jungle Chat</title>
 </head>
 <body>
-  <nav class="navbar navbar-light bg-light sticky-top">
+  
+  <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
       <img src="https://www.pikpng.com/pngl/b/65-654126_banana-nanica-png-clipart-picture-of-banana-transparent.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       JUNGLE CHAT
@@ -15,36 +16,12 @@
     <button type="button" id="clearMessages" class="btn btn-warning">Clear All</button>
   </nav>
 
-<div id=messageCard></div>
+  <div id="user-radios" class="m-2 p-2 col-4 d-flex flex-column"></div>
+  
+  <div id="messageCard"></div>
 
-<div id="user-radios" class="m-2 p-2 d-block d-flex flex-column"></div>
-
-<div>
-  <form id="new-message-form">
-    <div class="form-group">
-      <textarea class="form-control" id="new-message" name="message" placeholder="Enter your message here..."></textarea>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </form>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="largerText">
-    <label class="form-check-label" for="largerText">Make Text Larger</label>
-  </div>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#gif-selector" aria-expanded="false" aria-controls="collapseExample">
-    Giphy
-  </button>
-  <div class="collapse" id="gif-selector">
-    <div class="card card-body">
-      <form class="form-inline" id="search-giphy">
-        <div class="form-group mx-sm-3 mb-2">
-          <input type="text" class="form-control" id="gifPhrase" placeholder="Search for a Gif">
-        </div>
-        <button type="submit" class="btn btn-primary mb-2">Search Gifs</button>
-      </form>
-    </div>
-    <div id="gifs" class="d-flex justify-content-around"></div>
-  </div>
-</div>
+  <div id="message-entry"></div>
+  
 
 </body>
 </html>
