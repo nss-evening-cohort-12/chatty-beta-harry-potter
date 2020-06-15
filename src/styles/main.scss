@@ -1,6 +1,22 @@
 @import "~bootstrap/scss/bootstrap";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "node_modules/bootstrap/scss/bootstrap";
 
+
+
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: rgb(34, 76, 34);
+$secondary-color: rgb(65, 116, 58);
+$spot-color: rgb(240, 225, 106);
+
+body {
+  font: 100% $font-stack;
+  color: #F5F5F5;
+  background: $primary-color;
+}
+
+#user-radios {
+  background: $secondary-color;
 
 html, body {
   margin:0;
@@ -34,4 +50,26 @@ nav {
 
 #message-entry {
     grid-area: newMessage;
+}
+
+.button {
+  background-color: $primary-color;
+}
+
+.form-control {
+  background: $secondary-color;
+}
+
+.card-body {
+  background: #F5F5F5;
+  color: $primary-color;
+}
+
+nav {
+  background: $primary-color;
+  color: $spot-color;
+}
+
+.navbar-brand {
+  color: $spot-color;
 }
